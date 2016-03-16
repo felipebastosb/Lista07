@@ -1,0 +1,11 @@
+
+
+class NoFila {
+    public NoFila(int valor) 
+    {
+        this.valor=valor;
+        this.proximo=null;
+    }
+    int valor;
+    NoFila proximo;
+}
