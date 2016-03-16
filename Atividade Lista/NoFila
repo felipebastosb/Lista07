@@ -1,0 +1,65 @@
+
+
+
+NoFila inicio;
+public Fila ()
+    {
+        this.inicio= null;
+    }
+    
+ public void Inserir(int Valor)
+    {
+        if(this.inicio == null)
+        {
+            this.inicio =   new NoFila(Valor);
+        }
+        else
+        {
+            NoFila Atual = this.inicio;
+            while (Atual.next != null)
+                Atual = Atual.next;
+            
+            Atual.next = new NoFila(Valor);
+        }
+    }
+    
+    
+    void Remover() 
+    {
+      if(this.inicio!=null)
+      {
+        NoFila Atual = this.inicio;
+        NoFila Proximo = noAtual.proximo;
+        while(Proximo.proximo!=null) 
+        {
+          Atual = Atual.proximo;
+          Proximo = Proximo.proximo;
+        }
+        Atual.proximo = Proximo.proximo;
+      }
+    }
+    
+    public int RetornaRemove() 
+    {
+        if(this.inicio!=null)
+          {
+            NoFila Atual = this.inicio;
+            NoFila Proximo = noAtual.proximo;
+            while(posAtual.proximo!=null) 
+            {
+              Atual = Atual.proximo;
+              Proximo = Proximo.proximo;
+            }
+            return Proximo.valor;
+            Atual.proximo = Proximo.proximo;
+            
+        }
+    }
+    
+    public boolean Vazia ()
+    {
+        if(this.inicio==null)
+            return true;
+        else
+            return false; 
+    }
