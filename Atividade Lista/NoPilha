@@ -1,5 +1,6 @@
 class NoPilha {
-    public NoPilha(int valor) {
+    public NoPilha(int valor) 
+    {
         this.valor=valor;
         this.proximo=null;
     }
