@@ -1,4 +1,5 @@
-class NoPilha {
+class NoPilha 
+{
     public NoPilha(int valor) 
     {
         this.valor=valor;
