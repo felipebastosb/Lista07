@@ -1,0 +1,63 @@
+
+
+NoPilha inicio;
+public Pilha ()
+    {
+        this.inicio= null;
+    }
+    
+public void Inserir(int Valor)
+    {
+        if(this.inicio == null)
+        {
+            this.inicio =   new NoPilha(Valor);
+        }
+        else
+        {
+            NoPilha novoNo = new NoPilha(Valor);
+            novoNo.next = this.inicio;
+            this.inicio = novoNo;
+        }
+    }
+    
+    
+    void Remover() 
+    {
+        if(this.inicio!=null)
+        {
+            NoPilha Atual = this.inicio;
+            NoPilha Proximo = Atual.proximo;
+            while(Proximo.proximo!=null) 
+            {
+                Atual = Atual.proximo;
+                Proximo = Proximo.proximo;
+            }
+            Atual.proximo = Proximo.proximo;
+        }
+    }
+    
+    
+    public int RetornaRemove() 
+    {
+        if(this.inicio!=null)
+        {
+          NoPilha Atual = this.inicio;
+          NoPilha Proximo = Atual.proximo;
+          
+          while(Proximo.proximo!=null) 
+          {
+            Atual = Atual.proximo;
+            Proximo = Proximo.proximo;
+          }
+            return Proximo.valor;
+            Atual.proximo = Proximo.proximo;
+        }
+    }
+    
+    public boolean Vazia ()
+    {
+        if(this.inicio==null)
+            return true;
+        else
+            return false; 
+    }
