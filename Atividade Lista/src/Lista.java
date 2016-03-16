@@ -46,13 +46,17 @@ public class Lista
     
     public void Remover (int Valor)
     {
-        NoLista Atual = this.inicio;
-        NoLista Proximo = Atual.proximo;
-            while(posAtual.valor!=valor) {
+        if(this.inicio!=null)
+        {
+            NoLista Atual = this.inicio;
+            NoLista Proximo = Atual.proximo;
+            while(posAtual.valor!=valor) 
+            {
                 Atual = Atual.proximo;
                 Proximo = Proximo.proximo;
             }
-            Atual.proximo = Proximo.proximo;   
+            Atual.proximo = Proximo.proximo;
+        }
     }
     
     public boolean Vazia ()
