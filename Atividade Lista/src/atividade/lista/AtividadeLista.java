@@ -18,6 +18,11 @@ public class AtividadeLista {
         System.out.println(Teste.getValor(1));
         System.out.println(Teste.getPosicao(2));
         System.out.println(Teste.Vazia(););
+        
+        Pilha Teste2 = new Pilha();
+        Pilha.Inserir(3);
+        Pilha.Inserir(3);
+        
     }
     
 }
