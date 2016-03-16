@@ -20,8 +20,23 @@ public class AtividadeLista {
         System.out.println(Teste.Vazia(););
         
         Pilha Teste2 = new Pilha();
-        Pilha.Inserir(3);
-        Pilha.Inserir(3);
+        Teste2.Inserir(3);
+        Teste2.Inserir(4);
+        Teste2.Inserir(5);
+        Teste2.Inserir(6);
+        Teste2.Remover();
+        System.out.println(Teste2.RetornaRemove());
+        System.out.println(Teste2.Vazia());
+        
+        Fila Teste3 = new Fila();
+        Teste3.Inserir(3);
+        Teste3.Inserir(4);
+        Teste3.Inserir(5);
+        Teste3.Inserir(6);
+        Teste3.Remover();
+        System.out.println(Teste3.RetornaRemove());
+        System.out.println(Teste3.Vazia());
+        
         
     }
     
